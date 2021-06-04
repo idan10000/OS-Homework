@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="HW2" targetName="HW2" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="08ab51f9-a4e4-49db-a5c1-80c5c9fd8387" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1rIiUXBsm1kRgKzFsfHREw7vgCp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\idanp\OneDrive\Documents\University\Operating Systems\Homework\HW2" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="HW2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HW2" TARGET_NAME="HW2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HW2" RUN_TARGET_NAME="HW2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08ab51f9-a4e4-49db-a5c1-80c5c9fd8387" name="Default Changelist" comment="" />
+      <created>1618670020719</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618670020719</updated>
+      <workItem from="1618670025721" duration="194000" />
+      <workItem from="1618670237227" duration="5195000" />
+      <workItem from="1618731418153" duration="9578000" />
+      <workItem from="1618764200869" duration="595000" />
+      <workItem from="1618818782966" duration="21099000" />
+      <workItem from="1618918368793" duration="6118000" />
+      <workItem from="1619000860798" duration="3441000" />
+      <workItem from="1619094244835" duration="4812000" />
+      <workItem from="1619337385156" duration="6000" />
+      <workItem from="1619626790966" duration="1094000" />
+      <workItem from="1619697111398" duration="4988000" />
+      <workItem from="1619729633971" duration="640000" />
+      <workItem from="1619767733001" duration="2078000" />
+      <workItem from="1619802805436" duration="1003000" />
+      <workItem from="1619804931112" duration="12000" />
+      <workItem from="1619814073264" duration="927000" />
+      <workItem from="1619970892792" duration="372000" />
+      <workItem from="1619971316042" duration="594000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

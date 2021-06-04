@@ -1,0 +1,288 @@
+
+check searchable thread = 139849346656064
+open dir thread = 139849346656064
+test1 thread = 139849346656064
+test2 thread = 139849346656064
+init mutex thread = 139849346656064
+init flags thread = 139849346656064
+create Threads 916531008 thread = 0
+create Threads 916531008 thread = 1
+dequeue called thread = 139849338685184
+start flag = 0 thread = 139849338685184
+create Threads 916531008 thread = 2
+dequeue called thread = 139849330292480
+start flag = 0 thread = 139849330292480
+sending start signal thread = 139849346656064
+locked start thread = 139849338685184
+unlocked start thread = 139849338685184
+before empty lock, queue len = 908560128 thread = 1
+dequeue running thread = 139849338685184
+unlocking mutex thread = 139849338685184
+locked start thread = 139849330292480
+wait threads thread = 139849346656064
+dequeue called thread = 139849321899776
+before empty lock, queue len = 891774720 thread = 0
+entered queue=0 thread = 139849321899776
+cur active threads before dequeue: 891774720 thread = 3
+cur active threads before wait: 891774720 thread = 2
+deque before wait thread = 139849321899776
+unlocked start thread = 139849330292480
+before empty lock, queue len = 900167424 thread = 0
+entered queue=0 thread = 139849330292480
+cur active threads before dequeue: 900167424 thread = 2
+cur active threads before wait: 900167424 thread = 1
+deque before wait thread = 139849330292480
+Current path root thread = 139849338685184
+Current entry name . thread = 139849338685184
+at . or .. directories thread = 139849338685184
+Current entry name .. thread = 139849338685184
+at . or .. directories thread = 139849338685184
+Current entry name a thread = 139849338685184
+before d_type thread = 139849338685184
+search term: a thread = 139849338685184
+entered as matching search term thread = 139849338685184
+root/a thread = 139849338685184
+Current entry name b thread = 139849338685184
+before d_type thread = 139849338685184
+search term: a thread = 139849338685184
+Current entry name ba thread = 139849338685184
+before d_type thread = 139849338685184
+search term: a thread = 139849338685184
+entered as matching search term thread = 139849338685184
+root/ba thread = 139849338685184
+Current entry name first thread = 139849338685184
+before d_type thread = 139849338685184
+entered as directory thread = 139849338685184
+cur active threads: 908560128 thread = 1
+opening dir thread = 139849338685184
+new path root/first thread = 139849338685184
+enqueue thread = 139849338685184
+Current entry name test1 thread = 139849338685184
+before d_type thread = 139849338685184
+entered as directory thread = 139849338685184
+deque after wait thread = 139849321899776
+cur active threads after wait before increase: 891774720 thread = 1
+cur active threads after wait after increase: 891774720 thread = 2
+dequeue running thread = 139849321899776
+unlocking mutex thread = 139849321899776
+Current path root/first thread = 139849321899776
+cur active threads: 908560128 thread = 1
+opening dir thread = 139849338685184
+new path root/test1 thread = 139849338685184
+Current entry name . thread = 139849321899776
+at . or .. directories thread = 139849321899776
+Current entry name .. thread = 139849321899776
+at . or .. directories thread = 139849321899776
+Current entry name fba thread = 139849321899776
+before d_type thread = 139849321899776
+search term: a thread = 139849321899776
+entered as matching search term thread = 139849321899776
+root/first/fba thread = 139849321899776
+Current entry name fb thread = 139849321899776
+before d_type thread = 139849321899776
+search term: a thread = 139849321899776
+Current entry name second thread = 139849321899776
+before d_type thread = 139849321899776
+entered as directory thread = 139849321899776
+cur active threads: 891774720 thread = 2
+opening dir thread = 139849321899776
+new path root/first/second thread = 139849321899776
+enqueue thread = 139849338685184
+Current entry name test2 thread = 139849338685184
+before d_type thread = 139849338685184
+entered as directory thread = 139849338685184
+deque after wait thread = 139849330292480
+cur active threads after wait before increase: 900167424 thread = 2
+cur active threads after wait after increase: 900167424 thread = 3
+dequeue running thread = 139849330292480
+unlocking mutex thread = 139849330292480
+Current path root/test1 thread = 139849330292480
+Current entry name . thread = 139849330292480
+at . or .. directories thread = 139849330292480
+Current entry name .. thread = 139849330292480
+enqueue thread = 139849321899776
+Current entry name fa thread = 139849321899776
+before d_type thread = 139849321899776
+search term: a thread = 139849321899776
+entered as matching search term thread = 139849321899776
+root/first/fa thread = 139849321899776
+finished dir thread = 139849321899776
+dequeue called thread = 139849321899776
+before empty lock, queue len = 891774720 thread = 1
+dequeue running thread = 139849321899776
+cur active threads: 908560128 thread = 2
+opening dir thread = 139849338685184
+at . or .. directories thread = 139849330292480
+new path root/test2 thread = 139849338685184
+unlocking mutex thread = 139849321899776
+Current path root/first/second thread = 139849321899776
+Current entry name . thread = 139849321899776
+at . or .. directories thread = 139849321899776
+Current entry name .. thread = 139849321899776
+at . or .. directories thread = 139849321899776
+Current entry name sa thread = 139849321899776
+finished dir thread = 139849330292480
+dequeue called thread = 139849330292480
+before empty lock, queue len = 900167424 thread = 0
+entered queue=0 thread = 139849330292480
+cur active threads before dequeue: 900167424 thread = 3
+cur active threads before wait: 900167424 thread = 2
+deque before wait thread = 139849330292480
+before d_type thread = 139849321899776
+search term: a thread = 139849321899776
+entered as matching search term thread = 139849321899776
+root/first/second/sa thread = 139849321899776
+finished dir thread = 139849321899776
+dequeue called thread = 139849321899776
+before empty lock, queue len = 891774720 thread = 0
+entered queue=0 thread = 139849321899776
+cur active threads before dequeue: 891774720 thread = 2
+cur active threads before wait: 891774720 thread = 1
+deque before wait thread = 139849321899776
+enqueue thread = 139849338685184
+Current entry name test3 thread = 139849338685184
+before d_type thread = 139849338685184
+entered as directory thread = 139849338685184
+deque after wait thread = 139849330292480
+cur active threads after wait before increase: 900167424 thread = 1
+cur active threads after wait after increase: 900167424 thread = 2
+dequeue running thread = 139849330292480
+unlocking mutex thread = 139849330292480
+Current path root/test2 thread = 139849330292480
+cur active threads: 908560128 thread = 1
+opening dir thread = 139849338685184
+new path root/test3 thread = 139849338685184
+Current entry name . thread = 139849330292480
+at . or .. directories thread = 139849330292480
+Current entry name .. thread = 139849330292480
+at . or .. directories thread = 139849330292480
+finished dir thread = 139849330292480
+dequeue called thread = 139849330292480
+before empty lock, queue len = 900167424 thread = 0
+entered queue=0 thread = 139849330292480
+cur active threads before dequeue: 900167424 thread = 2
+cur active threads before wait: 900167424 thread = 1
+deque before wait thread = 139849330292480
+enqueue thread = 139849338685184
+Current entry name test4 thread = 139849338685184
+before d_type thread = 139849338685184
+entered as directory thread = 139849338685184
+deque after wait thread = 139849321899776
+cur active threads: 908560128 thread = 1
+opening dir thread = 139849338685184
+new path root/test4 thread = 139849338685184
+cur active threads after wait before increase: 891774720 thread = 1
+cur active threads after wait after increase: 891774720 thread = 2
+dequeue running thread = 139849321899776
+unlocking mutex thread = 139849321899776
+Current path root/test3 thread = 139849321899776
+Current entry name . thread = 139849321899776
+at . or .. directories thread = 139849321899776
+Current entry name .. thread = 139849321899776
+at . or .. directories thread = 139849321899776
+finished dir thread = 139849321899776
+dequeue called thread = 139849321899776
+before empty lock, queue len = 891774720 thread = 0
+entered queue=0 thread = 139849321899776
+cur active threads before dequeue: 891774720 thread = 2
+cur active threads before wait: 891774720 thread = 1
+deque before wait thread = 139849321899776
+enqueue thread = 139849338685184
+Current entry name test5 thread = 139849338685184
+before d_type thread = 139849338685184
+entered as directory thread = 139849338685184
+cur active threads: 908560128 thread = 1
+opening dir thread = 139849338685184
+new path root/test5 thread = 139849338685184
+deque after wait thread = 139849330292480
+cur active threads after wait before increase: 900167424 thread = 1
+cur active threads after wait after increase: 900167424 thread = 2
+dequeue running thread = 139849330292480
+unlocking mutex thread = 139849330292480
+Current path root/test4 thread = 139849330292480
+Current entry name . thread = 139849330292480
+at . or .. directories thread = 139849330292480
+Current entry name .. thread = 139849330292480
+at . or .. directories thread = 139849330292480
+finished dir thread = 139849330292480
+dequeue called thread = 139849330292480
+before empty lock, queue len = 900167424 thread = 0
+entered queue=0 thread = 139849330292480
+cur active threads before dequeue: 900167424 thread = 2
+cur active threads before wait: 900167424 thread = 1
+deque before wait thread = 139849330292480
+enqueue thread = 139849338685184
+Current entry name test6 thread = 139849338685184
+before d_type thread = 139849338685184
+entered as directory thread = 139849338685184
+cur active threads: 908560128 thread = 1
+opening dir thread = 139849338685184
+new path root/test6 thread = 139849338685184
+deque after wait thread = 139849321899776
+cur active threads after wait before increase: 891774720 thread = 1
+cur active threads after wait after increase: 891774720 thread = 2
+dequeue running thread = 139849321899776
+unlocking mutex thread = 139849321899776
+Current path root/test5 thread = 139849321899776
+Current entry name . thread = 139849321899776
+at . or .. directories thread = 139849321899776
+Current entry name .. thread = 139849321899776
+at . or .. directories thread = 139849321899776
+finished dir thread = 139849321899776
+dequeue called thread = 139849321899776
+before empty lock, queue len = 891774720 thread = 0
+entered queue=0 thread = 139849321899776
+cur active threads before dequeue: 891774720 thread = 2
+cur active threads before wait: 891774720 thread = 1
+deque before wait thread = 139849321899776
+enqueue thread = 139849338685184
+Current entry name test7 thread = 139849338685184
+before d_type thread = 139849338685184
+entered as directory thread = 139849338685184
+cur active threads: 908560128 thread = 1
+opening dir thread = 139849338685184
+new path root/test7 thread = 139849338685184
+deque after wait thread = 139849330292480
+cur active threads after wait before increase: 900167424 thread = 1
+cur active threads after wait after increase: 900167424 thread = 2
+dequeue running thread = 139849330292480
+unlocking mutex thread = 139849330292480
+Current path root/test6 thread = 139849330292480
+Current entry name . thread = 139849330292480
+at . or .. directories thread = 139849330292480
+Current entry name .. thread = 139849330292480
+at . or .. directories thread = 139849330292480
+finished dir thread = 139849330292480
+dequeue called thread = 139849330292480
+before empty lock, queue len = 900167424 thread = 0
+entered queue=0 thread = 139849330292480
+cur active threads before dequeue: 900167424 thread = 2
+cur active threads before wait: 900167424 thread = 1
+deque before wait thread = 139849330292480
+enqueue thread = 139849338685184
+finished dir thread = 139849338685184
+dequeue called thread = 139849338685184
+before empty lock, queue len = 908560128 thread = 1
+dequeue running thread = 139849338685184
+unlocking mutex thread = 139849338685184
+Current path root/test7 thread = 139849338685184
+Current entry name . thread = 139849338685184
+at . or .. directories thread = 139849338685184
+Current entry name .. thread = 139849338685184
+at . or .. directories thread = 139849338685184
+finished dir thread = 139849338685184
+dequeue called thread = 139849338685184
+before empty lock, queue len = 908560128 thread = 0
+deque after wait thread = 139849321899776
+cur active threads after wait before increase: 891774720 thread = 1
+cur active threads after wait after increase: 891774720 thread = 2
+entered queue=0 thread = 139849321899776
+cur active threads before dequeue: 891774720 thread = 2
+cur active threads before wait: 891774720 thread = 1
+deque before wait thread = 139849321899776
+entered queue=0 thread = 139849338685184
+cur active threads before dequeue: 908560128 thread = 1
+exiting thread = 139849338685184
+deque after wait thread = 139849321899776
+deque after wait thread = 139849330292480
+Done searching, found 5

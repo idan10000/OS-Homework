@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/idanp/OneDrive/Documents/University/Operating Systems/Homework/HW4/pfind.c
+stdio.h
+-
+pthread.h
+-
+stdatomic.h
+-
+stdlib.h
+-
+string.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+dirent.h
+-
+limits.h
+-
+unistd.h
+-
+errno.h
+-
+
