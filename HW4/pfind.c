@@ -194,6 +194,7 @@ void *handleThreads(void *searchTerm) {
                     strcpy(newPath, curPath);
                     strcat(newPath, "/");
                     strcat(newPath, curEntry->d_name);
+                    printf("%s\n",newPath);
                     filesFound++;
                 }
             }
