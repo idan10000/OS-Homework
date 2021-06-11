@@ -1,0 +1,3 @@
+C:/Users/idanp/OneDrive/Documents/University/Operating Systems/Homework/HW5/cmake-build-debug/CMakeFiles/HW5.dir
+C:/Users/idanp/OneDrive/Documents/University/Operating Systems/Homework/HW5/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/idanp/OneDrive/Documents/University/Operating Systems/Homework/HW5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
