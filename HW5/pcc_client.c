@@ -49,9 +49,6 @@ int main(int argc, char *argv[]) {
         exit(EXIT_FAILURE);
     }
     fclose(readFile);
-    for (int i = 0; i < N; i++)
-        printf("%c",sendBuffer[i]);
-    printf("\n");
 
     struct sockaddr_in serv_addr; // where we Want to get to
 
@@ -65,14 +62,12 @@ int main(int argc, char *argv[]) {
     serv_addr.sin_port = htons(atoi(argv[2])); // Note: htons for endiannes
     serv_addr.sin_addr.s_addr = inet_addr(argv[1]); // hardcoded...
 
-    printf("Client: connecting...\n");
 
     if (connect(sockfd, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0){
         printf("\n Error : Connect Failed. %s \n", strerror(errno));
         return 1;
     }
 
-    printf("N = %u\n", N);
     uint32_t netInt = htonl(N);
     char* inBuff = (char *) &netInt;
     int bytesWritten = 0;
@@ -80,7 +75,6 @@ int main(int argc, char *argv[]) {
     // Write N to server
     while(bytesWritten < 4){
         int curBytes = write(sockfd, inBuff + bytesWritten, 4 - bytesWritten);
-        printf("Client: curBytes = %d\n", curBytes);
         if(curBytes < 0){
             fprintf(stderr, "Failed writing N to server: %s\n", strerror(errno));
             exit(EXIT_FAILURE);

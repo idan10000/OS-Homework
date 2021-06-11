@@ -49,7 +49,7 @@ int main(int argc, char *argv[]) {
     serv_addr.sin_addr.s_addr = htonl(INADDR_ANY);
     serv_addr.sin_port = htons(atoi(argv[1]));
 
-    if (0 != bind(listenfd, (struct sockaddr *)&serv_addr, sizeof(serv_addr))){
+    if (0 != bind(listenfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr))) {
         printf("\n Error : Bind Failed. %s \n", strerror(errno));
         return 1;
     }
@@ -79,9 +79,7 @@ int main(int argc, char *argv[]) {
         int curBytes = 1;
         while (curBytes > 0) {
             curBytes = read(connfd, intBuff + bytesRead, 4 - bytesRead);
-            printf("Server: curBytes = %d\n", curBytes);
             bytesRead += curBytes;
-            printf("Server: bytesRead = %d\n",bytesRead);
         }
         if (curBytes < 0) {
             if (!(errno == ETIMEDOUT || errno == ECONNRESET || errno == EPIPE)) {
@@ -103,16 +101,13 @@ int main(int argc, char *argv[]) {
         }
 
         // ----------------- Read file -----------------
-        printf("Server: starting read file handling \n");
         int N = ntohl(netInt); // Amount of bits to be received
         char *readBuf = malloc(N);
         bytesRead = 0;
         curBytes = 1;
         while (curBytes > 0) {
             curBytes = read(connfd, readBuf + bytesRead, N - bytesRead);
-            printf("Server: curBytes = %d\n", curBytes);
             bytesRead += curBytes;
-            printf("Server: bytesRead = %d\n",bytesRead);
         }
         if (curBytes < 0) {
             if (!(errno == ETIMEDOUT || errno == ECONNRESET || errno == EPIPE)) {
@@ -135,11 +130,9 @@ int main(int argc, char *argv[]) {
 
         // ----------------- Calculate C -----------------
         int C = 0;
-        for (int i = 0; i < N; i++)
-            printf("%d",readBuf[i]);
-        printf("\n");
 
-            for (int i = 0; i < 95; ++i) { // reset temp buffer
+
+        for (int i = 0; i < 95; ++i) { // reset temp buffer
             pcc_temp[i] = 0;
         }
         // count readable chars of each type
