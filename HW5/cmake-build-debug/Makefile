@@ -195,6 +195,33 @@ pcc_server.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW5.dir\build.make CMakeFiles/HW5.dir/pcc_server.c.s
 .PHONY : pcc_server.c.s
 
+test.obj: test.c.obj
+
+.PHONY : test.obj
+
+# target to build an object file
+test.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW5.dir\build.make CMakeFiles/HW5.dir/test.c.obj
+.PHONY : test.c.obj
+
+test.i: test.c.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW5.dir\build.make CMakeFiles/HW5.dir/test.c.i
+.PHONY : test.c.i
+
+test.s: test.c.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW5.dir\build.make CMakeFiles/HW5.dir/test.c.s
+.PHONY : test.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -210,6 +237,9 @@ help:
 	@echo ... pcc_server.obj
 	@echo ... pcc_server.i
 	@echo ... pcc_server.s
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
 .PHONY : help
 
 

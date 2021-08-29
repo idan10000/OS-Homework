@@ -80,6 +80,9 @@
 		<Unit filename="C:/Users/idanp/OneDrive/Documents/University/Operating Systems/Homework/HW5/pcc_server.c">
 			<Option target="HW5"/>
 		</Unit>
+		<Unit filename="C:/Users/idanp/OneDrive/Documents/University/Operating Systems/Homework/HW5/test.c">
+			<Option target="HW5"/>
+		</Unit>
 		<Unit filename="C:/Users/idanp/OneDrive/Documents/University/Operating Systems/Homework/HW5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

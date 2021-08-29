@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/idanp/OneDrive/Documents/University/Operating Systems/Homework/HW5/pcc_client.c" "C:/Users/idanp/OneDrive/Documents/University/Operating Systems/Homework/HW5/cmake-build-debug/CMakeFiles/HW5.dir/pcc_client.c.obj"
   "C:/Users/idanp/OneDrive/Documents/University/Operating Systems/Homework/HW5/pcc_server.c" "C:/Users/idanp/OneDrive/Documents/University/Operating Systems/Homework/HW5/cmake-build-debug/CMakeFiles/HW5.dir/pcc_server.c.obj"
+  "C:/Users/idanp/OneDrive/Documents/University/Operating Systems/Homework/HW5/test.c" "C:/Users/idanp/OneDrive/Documents/University/Operating Systems/Homework/HW5/cmake-build-debug/CMakeFiles/HW5.dir/test.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

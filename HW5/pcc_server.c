@@ -13,6 +13,7 @@
 int connfd = -1;
 int sigFlag = 0;
 uint32_t pcc_total[95] = {0};
+sigset_t sigset;
 
 void end(int);
 
@@ -30,11 +31,15 @@ int main(int argc, char *argv[]) {
         exit(EXIT_FAILURE);
     }
 
+    sigemptyset(&sigset);
+    sigaddset(&sigset, SIGUSR1);
+
     struct sigaction sigUSR1;
     sigUSR1.sa_handler = &signalHandler;
+    sigUSR1.sa_flags = SA_RESTART;
     if (sigaction(SIGUSR1, &sigUSR1, NULL) != 0) {
         fprintf(stderr, "Signal handler registration failed. %s\n", strerror(errno));
-        return -1;
+        return 1;
     }
 
     uint32_t pcc_temp[95] = {0};
@@ -43,6 +48,10 @@ int main(int argc, char *argv[]) {
 
 
     listenfd = socket(AF_INET, SOCK_STREAM, 0);
+    if (setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, &(int){1}, sizeof(int)) < 0){
+        fprintf(stderr, "Error : socket opt failed. %s \n", strerror(errno));
+        return 1;
+    }
     memset(&serv_addr, 0, sizeof(serv_addr));
 
     serv_addr.sin_family = AF_INET;
@@ -50,12 +59,12 @@ int main(int argc, char *argv[]) {
     serv_addr.sin_port = htons(atoi(argv[1]));
 
     if (0 != bind(listenfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr))) {
-        printf("\n Error : Bind Failed. %s \n", strerror(errno));
+        fprintf(stderr, "Error : Bind Failed. %s \n", strerror(errno));
         return 1;
     }
 
     if (0 != listen(listenfd, 10)) {
-        printf("\n Error : Listen Failed. %s \n", strerror(errno));
+        fprintf(stderr, "Error : Listen Failed. %s \n", strerror(errno));
         return 1;
     }
 
@@ -66,6 +75,9 @@ int main(int argc, char *argv[]) {
             end(0);
 
         connfd = accept(listenfd, NULL, NULL);
+
+        sigprocmask(SIG_BLOCK, &sigset, NULL); // block SIGUSR1 signals
+
         if (connfd < 0) {
             printf("\n Error : Accept Failed. %s \n", strerror(errno));
             return 1;
@@ -128,6 +140,7 @@ int main(int argc, char *argv[]) {
             }
         }
 
+
         // ----------------- Calculate C -----------------
         int C = 0;
 
@@ -152,6 +165,7 @@ int main(int argc, char *argv[]) {
             curBytes = write(connfd, intBuff + bytesWritten, 4 - bytesWritten);
             bytesWritten += curBytes;
         }
+
         if (curBytes < 0) {
             if (!(errno == ETIMEDOUT || errno == ECONNRESET || errno == EPIPE)) {
                 fprintf(stderr, "Failed to read N: %s\n", strerror(errno));
@@ -171,7 +185,7 @@ int main(int argc, char *argv[]) {
             }
         }
 
-        // if no error has occured until this point, update pcc_total from pcc_temp
+        // if no error has occurred until this point, update pcc_total from pcc_temp
         for (int i = 0; i < 95; i++) {
             pcc_total[i] += pcc_temp[i];
         }
@@ -179,6 +193,7 @@ int main(int argc, char *argv[]) {
         // close socket
         close(connfd);
         connfd = -1;
+        sigprocmask(SIG_UNBLOCK, &sigset, NULL);
     }
 }
 

@@ -3,4 +3,4 @@ project(HW5 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(HW5 pcc_client.c pcc_server.c)
+add_executable(HW5 test.c)

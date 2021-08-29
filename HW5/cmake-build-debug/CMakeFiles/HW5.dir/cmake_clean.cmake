@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/HW5.dir/pcc_client.c.obj"
   "CMakeFiles/HW5.dir/pcc_server.c.obj"
+  "CMakeFiles/HW5.dir/test.c.obj"
   "HW5.exe"
   "HW5.exe.manifest"
   "HW5.pdb"
